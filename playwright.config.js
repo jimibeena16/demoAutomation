@@ -37,7 +37,7 @@ export default defineConfig({
     /*Bypass SSL/TLScertificate warnings */
     ignoreHTTPSErrors: true,
      
-    headless: false,
+    headless: true,
     /* Base URL to use in actions like `await page.goto('')`. */
     //baseURL: '',
 
