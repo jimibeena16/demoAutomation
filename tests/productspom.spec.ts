@@ -25,5 +25,5 @@ test('Add Backpack to Cart', async ({ page }) => {
   await productsPage.openCart();
 
   // Verify cart
-  await expect(cartPage.productName).toHaveText('Sauce Labs Backpack');
+  await expect(cartPage.productName.first()).toHaveText('Sauce Labs Backpack');
 });
