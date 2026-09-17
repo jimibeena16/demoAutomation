@@ -25,5 +25,5 @@ test('Verify Product in Cart', async ({ page }) => {
   await expect(cartPage.pageTitle).toHaveText('Your Cart');
 
   // Verify product
-  await expect(cartPage.productNames).toHaveText('Sauce Labs Backpack');
+  await expect(cartPage.productName).toHaveText('Sauce Labs Backpack');
 });
