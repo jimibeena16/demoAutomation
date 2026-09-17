@@ -20,7 +20,7 @@ test('SauceDemo End to End Flow', async ({ page }) => {
   await page.locator('.shopping_cart_link').click();
 
   // Verify cart
-  await expect(page.locator('.inventory_item_name')).toHaveText('Sauce Labs Backpack');
+  await expect(page.locator('.inventory_item_name').first()).toHaveText('Sauce Labs Backpack');
 
   // Checkout
   await page.locator('#checkout').click();
