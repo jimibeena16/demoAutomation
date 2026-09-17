@@ -27,13 +27,3 @@ test('Add Backpack to Cart', async ({ page }) => {
   // Verify cart
   await expect(cartPage.productName).toHaveText('Sauce Labs Backpack');
 });
-
-
-
- 
-  await expect(cartPage.productNames).toHaveText([
-      'Sauce Labs Backpack',
-      'Sauce Labs Bike Light',
-      'Sauce Labs Bolt T-Shirt'
-    ]);
-});
